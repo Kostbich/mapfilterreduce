@@ -1,7 +1,7 @@
 // 1 
 const names = ['Иван', 'Мария', 'Алексей', 'Ольга', 'Сергей', 'Анна'];
 names.forEach(name => {
-    console.log(Привет, ${name});
+    console.log(`Привет, ${name}`);
 });
 
 // 2
@@ -10,8 +10,8 @@ const multipliedNumbers = numbers.map(num => num * 10);
 console.log(multipliedNumbers);
 
 // 3
-const numbers = [5, 12, 8, 130, 44];
-const filteredNumbers = numbers.filter(num => num > 10);
+const number = [5, 12, 8, 130, 44];
+const filteredNumbers = number.filter(num => num > 10);
 console.log(filteredNumbers);
 
 // 4
@@ -25,7 +25,7 @@ const people = [
 ];
 const filteredAndMappedPeople = people
   .filter(person => person.age > 18)
-  .map(person => ${person.name} (${person.age} лет));
+  .map(`person => ${person.name} (${person.age} лет`));
 console.log(filteredAndMappedPeople);
 
 // 5
@@ -36,4 +36,4 @@ const sales = [
 ];
 
 const totalSales = sales.reduce((total, sale) => total + (sale.price * sale.quantity), 0);
-console.log(Общая стоимость продаж: ${totalSales});
+console.log(`Общая стоимость продаж: ${totalSales}`);
